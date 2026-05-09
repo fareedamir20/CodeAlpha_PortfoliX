@@ -36,10 +36,10 @@ export function Dashboard() {
             </div>
           </div>
           <div className="z-10 flex gap-4 mt-8">
-            <button className="bg-white text-[#141414] px-6 py-2 border-2 border-white text-xs uppercase font-bold tracking-wider hover:bg-transparent hover:text-white transition-colors">
+            <button onClick={() => alert("Deposit funds pipeline simulating...")} className="bg-white text-[#141414] px-6 py-2 border-2 border-white text-xs uppercase font-bold tracking-wider hover:bg-transparent hover:text-white transition-colors">
               Deposit Funds
             </button>
-            <button className="bg-transparent border-2 border-white text-white px-6 py-2 text-xs uppercase font-bold tracking-wider hover:bg-white hover:text-[#141414] transition-colors">
+            <button onClick={() => alert("Withdraw funds pipeline simulating...")} className="bg-transparent border-2 border-white text-white px-6 py-2 text-xs uppercase font-bold tracking-wider hover:bg-white hover:text-[#141414] transition-colors">
               Withdraw
             </button>
           </div>
@@ -89,10 +89,10 @@ export function Dashboard() {
         <div className="p-4 border-b-2 border-[#141414] flex justify-between items-center bg-[#F2F1EE]">
           <h2 className="font-bold uppercase tracking-widest text-xs opacity-50">Current Holdings</h2>
           <div className="flex gap-2">
-            <button className="border-2 border-[#141414] p-1.5 hover:bg-[#141414] hover:text-white transition-colors">
+            <button onClick={() => alert("Filtering applied...")} className="border-2 border-[#141414] p-1.5 hover:bg-[#141414] hover:text-white transition-colors">
               <Filter className="w-4 h-4" />
             </button>
-            <button className="border-2 border-[#141414] p-1.5 hover:bg-[#141414] hover:text-white transition-colors">
+            <button onClick={() => alert("Downloading holdings...")} className="border-2 border-[#141414] p-1.5 hover:bg-[#141414] hover:text-white transition-colors">
               <Download className="w-4 h-4" />
             </button>
           </div>
@@ -160,7 +160,7 @@ export function Dashboard() {
           <div className="flex-1 space-y-2">
             <h3 className="font-bold uppercase tracking-widest text-xs opacity-50 border-b border-[#141414] pb-2">Market Narrative</h3>
             <p className="text-[#141414] text-xs font-mono leading-relaxed mt-4">
-              &gt; PortfoliX performance remains strong, driven by heavy exposure to semiconductor and cloud infrastructure growth.<br/>
+              &gt; PortfoliXai performance remains strong, driven by heavy exposure to semiconductor and cloud infrastructure growth.<br/>
               &gt; Earnings reports from MSFT and NVDA suggest a sustained long-term trend in enterprise AI integration.<br/>
               &gt; Current cash reserve is 4.2%, suggesting room for opportunistic accumulation in the energy sector should volatility increase.
             </p>

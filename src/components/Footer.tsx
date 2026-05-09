@@ -6,7 +6,7 @@ export function Footer() {
         <span className="text-xs font-mono mt-1">Displaying 4/5 tracked assets</span>
       </div>
       <div className="flex flex-col items-center">
-        <span className="text-[10px] font-bold uppercase opacity-50">PortfoliX Stability Index</span>
+        <span className="text-[10px] font-bold uppercase opacity-50">PortfoliXai Stability Index</span>
         <div className="w-48 h-2 bg-white border border-[#141414] mt-1 relative overflow-hidden">
           <div className="absolute top-0 left-0 h-full bg-[#141414] w-[78%]"></div>
         </div>

@@ -1,4 +1,4 @@
-# PortfoliX
+# PortfoliXai
 
 A modern, institutional-grade portfolio tracking application built with React and Tailwind CSS. 
 Track your positions, analyze market moves, and monitor your watchlists.

@@ -15,7 +15,7 @@ export function Header({ showSearch = true }: HeaderProps) {
       <div className="flex items-center gap-4">
         <div className="w-8 h-8 bg-[#141414] flex items-center justify-center text-white font-bold">P</div>
         <div className="font-display-lg text-xl font-black text-on-surface uppercase tracking-tight">
-          PortfoliX<span className="opacity-50 text-xs ml-2">v2.0.0</span>
+          PortfoliXai<span className="opacity-50 text-xs ml-2">v2.0.0</span>
         </div>
         {showSearch && (
           <div className="hidden md:flex items-center bg-[#F2F1EE] border-2 border-[#141414] px-3 py-1.5 w-64 ml-4">
@@ -35,10 +35,10 @@ export function Header({ showSearch = true }: HeaderProps) {
         </div>
         <div className="h-6 w-[2px] bg-[#141414]"></div>
         <div className="flex items-center gap-4">
-          <Bell className="w-5 h-5 text-[#141414] cursor-pointer hover:opacity-70 transition-opacity" />
-          <RefreshCw className="w-5 h-5 text-[#141414] cursor-pointer hover:opacity-70 transition-opacity" />
-          <HelpCircle className="w-5 h-5 text-[#141414] cursor-pointer hover:opacity-70 transition-opacity" />
-          <button className="px-4 py-1.5 border-2 border-[#141414] text-[#141414] font-bold text-xs uppercase tracking-wider hover:bg-[#141414] hover:text-white transition-colors">
+          <Bell onClick={() => alert('No new notifications.')} className="w-5 h-5 text-[#141414] cursor-pointer hover:opacity-70 transition-opacity" />
+          <RefreshCw onClick={() => { alert('Refreshing data...'); window.location.reload(); }} className="w-5 h-5 text-[#141414] cursor-pointer hover:opacity-70 transition-opacity" />
+          <HelpCircle onClick={() => alert('Help center module not implemented.')} className="w-5 h-5 text-[#141414] cursor-pointer hover:opacity-70 transition-opacity" />
+          <button onClick={() => alert('Session saved locally.')} className="px-4 py-1.5 border-2 border-[#141414] text-[#141414] font-bold text-xs uppercase tracking-wider hover:bg-[#141414] hover:text-white transition-colors">
             Save Session
           </button>
         </div>

@@ -42,7 +42,7 @@ export function PortfolioReview() {
       <div className="w-full max-w-full lg:max-w-7xl mx-auto border-2 border-[#141414] bg-white flex flex-col">
         {/* Header Section */}
         <div className="border-b-2 border-[#141414] p-6 bg-[#F2F1EE]">
-          <h1 className="font-display-lg text-2xl font-black uppercase tracking-tighter text-[#141414] mb-2">PortfoliX Final Review</h1>
+          <h1 className="font-display-lg text-2xl font-black uppercase tracking-tighter text-[#141414] mb-2">PortfoliXai Final Review</h1>
           <p className="text-[#141414] text-xs font-mono opacity-80 uppercase tracking-widest">Confirm your asset distribution and export your institutional report.</p>
         </div>
 
