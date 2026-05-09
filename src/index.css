@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-secondary: #000000;
+  --color-on-primary-fixed-variant: #ffffff;
+  --color-on-secondary-fixed: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-tint: #141414;
+  --color-surface-container-low: #F2F1EE;
+  --color-on-primary-container: #ffffff;
+  --color-secondary-fixed-dim: #141414;
+  --color-outline: #141414;
+  --color-inverse-on-surface: #E4E3E0;
+  --color-tertiary-container: #F2F1EE;
+  --color-on-error-container: #141414;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #ffffff;
+  --color-tertiary-fixed-dim: #141414;
+  --color-on-secondary-fixed-variant: #ffffff;
+  --color-surface-variant: #F2F1EE;
+  --color-inverse-primary: #141414;
+  --color-on-tertiary-fixed-variant: #ffffff;
+  --color-outline-variant: #141414;
+  --color-secondary-fixed: #141414;
+  --color-on-surface-variant: #141414;
+  --color-primary: #141414;
+  --color-on-secondary: #E4E3E0;
+  --color-surface-container-highest: #141414;
+  --color-surface-dim: #E4E3E0;
+  --color-error-container: #fca5a5;
+  --color-on-tertiary: #E4E3E0;
+  --color-on-error: #ffffff;
+  --color-tertiary-fixed: #141414;
+  --color-on-secondary-container: #ffffff;
+  --color-background: #E4E3E0;
+  --color-on-tertiary-fixed: #ffffff;
+  --color-primary-container: #141414;
+  --color-inverse-surface: #141414;
+  --color-tertiary: #141414;
+  --color-surface: #ffffff;
+  --color-error: #dc2626;
+  --color-surface-container: #E4E3E0;
+  --color-surface-bright: #ffffff;
+  --color-on-tertiary-container: #ffffff;
+  --color-secondary-container: #141414;
+  --color-surface-container-high: #F2F1EE;
+  --color-on-background: #141414;
+  --color-on-surface: #141414;
+  --color-primary-fixed-dim: #141414;
+  --color-primary-fixed: #141414;
+
+  --font-display-lg: "Inter", sans-serif;
+  --font-headline-md: "Inter", sans-serif;
+  --font-headline-sm: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-data-tabular: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --spacing-margin-desktop: 40px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-lg: 32px;
+  --spacing-margin-mobile: 16px;
+  --spacing-container-max: 1440px;
+  --spacing-stack-sm: 8px;
+  --spacing-gutter: 24px;
+
+  --animate-scale-98: scale-98 0.15s ease-out;
+
+  @keyframes scale-98 {
+    0% { transform: scale(1); }
+    100% { transform: scale(0.98); }
+  }
+
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-full: 0px;
+
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: 4px 4px 0px 0px #141414;
+  --shadow-xl: 8px 8px 0px 0px #141414;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body-md;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .flat-card {
+    @apply bg-surface-container-lowest border-2 border-outline-variant transition-all duration-200;
+  }
+  
+  * {
+    border-color: #141414 !important;
+  }
+}
